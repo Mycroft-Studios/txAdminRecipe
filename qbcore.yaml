@@ -38,6 +38,9 @@ tasks:
     dest: ./resources/[standalone]
     src: ./tmp/files/ghmattimysql.zip
 
+  - action: remove_path
+    path: ./resources/[standalone]/ghmattimysql/config.json
+
   - action: download_file
     path: ./tmp/menuv.zip
     url: https://github.com/ThymonA/menuv/releases/download/v1.4.1/menuv_v1.4.1.zip
